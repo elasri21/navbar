@@ -1,0 +1,37 @@
+footer {
+    @media #{$wide} {
+        margin-top: 20px;
+        padding: 20px 100px !important;
+        .companies {
+            flex-wrap: nowrap;
+        }
+    }
+    @media #{$small} {
+        .feedback {
+            p {
+                text-align: center;
+            }
+        }
+        .companies {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    padding: 20px 50px;
+    .feedback {
+        margin-bottom: 15px;
+        p {
+            color: $text-color;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+    .companies {
+        img {
+            width: 120px;
+            margin-right: 40px;
+        }
+    }
+}
